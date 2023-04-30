@@ -30,7 +30,354 @@ body {
 }
 
 .keyboard-desk {
-    background-color: black;
+    background-color: lightgray;
+    box-shadow: 0px 15px 30px 0px rgba(0,0,0,0.6);
+    border-radius: 10px;
     width: 800px;
     height: 300px;
+}
+
+.keyboard-desk__shape {
+    padding: 20px;
+    color: white;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 6px;
+    grid-template-areas:
+        "tilda      one        two            three four  five  six   seven eight nine     null         minus             equal              backspace   backspace"
+        "tab        q          w              e     r     t     y     u     i     o        p            bracket-left      bracket-right      backslash   del"
+        "caps       caps       a              s     d     f     g     h     j     k        l            semicolon         quote              enter       enter"
+        "shift-left shift-left backslash-left z     x     c     v     b     n     m        period       comma             slash              arrow-up    shift-right"
+        "ctrl-left  win        alt-left       space space space space space space space    alt-right    ctrl-right        arrow-left         arrow-down  arrow-right";
+}
+
+.tilda, 
+.one, 
+.two, 
+.three,
+.four, 
+.five, 
+.six, 
+.seven, 
+.eight, 
+.nine, 
+.null, 
+.minus, 
+.equal,
+.backspace,
+.tab,
+.q,
+.w,
+.e,
+.r,
+.t,
+.y,
+.u,
+.i,
+.o,
+.p,
+.bracket-left,
+.bracket-right,
+.backslash,
+.del,
+.caps,
+.a,
+.s, 
+.d,
+.f,
+.g,
+.h,
+.j,
+.k,
+.l,
+.semicolon,
+.quote,
+.enter,
+.shift-left,
+.backslash-left,
+.z,
+.x,
+.c,
+.v,
+.b,
+.n,
+.m,
+.period,
+.comma,
+.slash,
+.arrow-up,
+.shift-right,
+.ctrl-left,
+.win,
+.alt-left,
+.space,
+.alt-right,
+.ctrl-right,
+.arrow-left,
+.arrow-down,
+.arrow-right {
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.7);
+    border: none;
+}
+
+.one {
+    grid-area: one;
+}
+
+.two {
+    grid-area: two;
+}
+
+.three {
+    grid-area: three;
+}
+
+.four {
+    grid-area: four;
+}
+
+.five {
+    grid-area: five;
+}
+
+.six {
+    grid-area: six;
+}
+
+.seven {
+    grid-area: seven;
+}
+
+.eight {
+    grid-area: eight;
+}
+
+.nine {
+    grid-area: nine;
+}
+
+.null {
+    grid-area: null;
+}
+
+.minus {
+    grid-area: minus;
+}
+
+.equal {
+    grid-area: equal;
+}
+
+.backspace {
+    grid-area: backspace;
+}
+
+.tab {
+    grid-area: tab;
+}
+
+.q {
+    grid-area: q;
+}
+
+.w {
+    grid-area: w;
+}
+
+.e {
+    grid-area: e;
+}
+
+.r {
+    grid-area: r;
+}
+
+.t {
+    grid-area: t;
+}
+
+.y {
+    grid-area: y;
+}
+
+.u {
+    grid-area: u;
+}
+
+.i {
+    grid-area: i;
+}
+
+.o {
+    grid-area: o;
+}
+
+.p {
+    grid-area: p;
+}
+
+.bracket-left {
+    grid-area: bracket-left;
+}
+
+.bracket-right {
+    grid-area: bracket-right;
+}
+
+.backslash {
+    grid-area: backslash;
+}
+
+
+.del {
+    grid-area: del;
+}
+
+.caps {
+    grid-area: caps;
+}
+
+.a {
+    grid-area: a;
+}
+
+.s {
+    grid-area: s;
+}
+
+.d {
+    grid-area: d;
+}
+
+.f {
+    grid-area: f;
+}
+
+.g {
+    grid-area: g;
+}
+
+.h {
+    grid-area: h;
+}
+
+.j {
+    grid-area: j;
+}
+
+.k {
+    grid-area: k;
+}
+
+.l {
+    grid-area: l;
+}
+
+.semicolon {
+    grid-area: semicolon;
+}
+
+.quote {
+    grid-area: quote;
+}
+
+.enter {
+    grid-area: enter;
+}
+
+.shift-left {
+    grid-area: shift-left;
+}
+
+.backslash-left {
+    grid-area: backslash-left;
+}
+
+.z {
+    grid-area: z;
+}
+
+.x {
+    grid-area: x;
+}
+
+.c {
+    grid-area: c;
+}
+
+.v {
+    grid-area: v;
+}
+
+.b {
+    grid-area: b;
+}
+
+.n {
+    grid-area: n;
+}
+
+.m {
+    grid-area: m;
+}
+
+.period {
+    grid-area: period;
+}
+
+.comma {
+    grid-area: comma;
+}
+
+.slash {
+    grid-area: slash;
+}
+
+.arrow-up {
+    grid-area: arrow-up ;
+}
+
+.shift-right {
+    grid-area: shift-right;
+}
+
+.ctrl-left {
+     grid-area: ctrl-left;
+}
+
+.win {
+     grid-area: win;
+}
+
+.alt-left {
+     grid-area: alt-left;
+}
+
+.space {
+     grid-area: space;
+}
+
+.alt-right {
+     grid-area: alt-right;
+}
+
+.ctrl-right {
+     grid-area: ctrl-right;
+}
+
+.arrow-left {
+     grid-area: arrow-left;
+}
+
+.arrow-down {
+     grid-area: arrow-down;
+}
+
+.arrow-right {
+     grid-area: arrow-right;
 }
