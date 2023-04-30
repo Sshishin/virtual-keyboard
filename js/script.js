@@ -6,75 +6,74 @@ const html = `
     <main class="container">
         <div class="keyboard">
             <section class="keyboard-input">
-                <input class="keyboard-input__area"/>
+                <textarea class="keyboard-input__area"></textarea>
             </section>
             <section class="keyboard-desk">
                 <div class="keyboard-desk__shape">
-                    <button class="tilda">~</button>
-                    <button class="one">1</button>
-                    <button class="two">2</button>
-                    <button class="three">3</button>
-                    <button class="four">4</button>
-                    <button class="five">5</button>
-                    <button class="six">6</button>
-                    <button class="seven">7</button>
-                    <button class="eight">8</button>
-                    <button class="nine">9</button>
-                    <button class="null">0</button>
-                    <button class="minus">-</button>
-                    <button class="equal">=</button>
-                    <button class="backspace">Backspace</button>
-                    <button class="tab">Tab</button>
-                    <button class="q">Q</button>
-                    <button class="w">W</button>
-                    <button class="e">E</button>
-                    <button class="r">R</button>
-                    <button class="t">T</button>
-                    <button class="y">Y</button>
-                    <button class="u">U</button>
-                    <button class="i">I</button>
-                    <button class="o">O</button>
-                    <button class="p">P</button>
-                    <button class="bracket-left">'['</button>
-                    <button class="bracket-right">']'</button>
-                    <button class="backslash">'\'</button>
-                    <button class="del">Del</button>
-                    <button class="caps">Caps Lock</button>
-                    <button class="a">A</button>
-                    <button class="s">S</button>
-                    <button class="d">D</button>
-                    <button class="f">F</button>
-                    <button class="g">G</button>
-                    <button class="h">H</button>
-                    <button class="j">J</button>
-                    <button class="k">K</button>
-                    <button class="l">L</button>
-                    <button class="semicolon">';'</button>
-                    <button class="quote">"'"</button>
-                    <button class="enter">Enter</button>
-                    <button class="shift-left">Shift</button>
-                    <button class="backslash-left">'\'</button>
-                    <button class="z">Z</button>
-                    <button class="x">X</button>
-                    <button class="c">C</button>
-                    <button class="v">V</button>
-                    <button class="b">B</button>
-                    <button class="n">N</button>
-                    <button class="m">M</button>
-                    <button class="period">.</button>
-                    <button class="comma">,</button>
-                    <button class="slash">/</button>
-                    <button class="arrow-up">ArrowUp</button>
-                    <button class="shift-right">Shift</button>
-                    <button class="ctrl-left">Ctrl</button>
-                    <button class="win">Win</button>
-                    <button class="alt-left">Alt</button>
-                    <button class="space">Space</button>
-                    <button class="alt-right">Alt</button>
-                    <button class="ctrl-right">Ctrl</button>
-                    <button class="arrow-left">ArrowLeft</button>
-                    <button class="arrow-down">ArrowDown</button>
-                    <button class="arrow-right">ArrowRight</button>
+                    <button id="192" data="Backquote" class="tilda">~</button>
+                    <button id="49" data="Digit1" class="one">1</button>
+                    <button id="50" data="Digit2" class="two">2</button>
+                    <button id="51" data="Digit3" class="three">3</button>
+                    <button id="52" data="Digit4" class="four">4</button>
+                    <button id="53" data="Digit5" class="five">5</button>
+                    <button id="54" data="Digit6" class="six">6</button>
+                    <button id="55" data="Digit7" class="seven">7</button>
+                    <button id="56" data="Digit8" class="eight">8</button>
+                    <button id="57" data="Digit9" class="nine">9</button>
+                    <button id="48" data="Digit0" class="null">0</button>
+                    <button id="189" data="Minus" class="minus">-</button>
+                    <button id="187" data="Equal" class="equal">=</button>
+                    <button id="8" data="Backspace" class="backspace">Backspace</button>
+                    <button id="9" data="Tab" class="tab">Tab</button>
+                    <button id="81" data="KeyQ" class="q">Q</button>
+                    <button id="87" data="KeyW" class="w">W</button>
+                    <button id="69" data="KeyE" class="e">E</button>
+                    <button id="82" data="KeyR" class="r">R</button>
+                    <button id="84" data="KeyT" class="t">T</button>
+                    <button id="89" data="KeyY" class="y">Y</button>
+                    <button id="85" data="KeyU" class="u">U</button>
+                    <button id="73" data="KeyI" class="i">I</button>
+                    <button id="79" data="KeyO" class="o">O</button>
+                    <button id="80" data="KeyP" class="p">P</button>
+                    <button id="219" data="BracketLeft" class="bracket-left">'['</button>
+                    <button id="221" data="BracketRight" class="bracket-right">']'</button>
+                    <button id="220" data="Backslash" class="backslash">'\'</button>
+                    <button id="8" data="Delete" class="del">Del</button>
+                    <button id="20" data="CapsLock" class="caps">Caps Lock</button>
+                    <button id="65" data="KeyA" class="a">A</button>
+                    <button id="83" data="KeyS" class="s">S</button>
+                    <button id="68" data="KeyD" class="d">D</button>
+                    <button id="70" data="KeyF" class="f">F</button>
+                    <button id="71" data="KeyG" class="g">G</button>
+                    <button id="72" data="KeyH" class="h">H</button>
+                    <button id="74" data="KeyJ" class="j">J</button>
+                    <button id="75" data="KeyK" class="k">K</button>
+                    <button id="76" data="KeyL" class="l">L</button>
+                    <button id="186" data="Semicolon" class="semicolon">';'</button>
+                    <button id="222" data="Quote" class="quote">"'"</button>
+                    <button id="13" data="Enter" class="enter">Enter</button>
+                    <button id="16" data="ShiftLeft" class="shift-left">Shift</button>
+                    <button id="90" data="KeyZ" class="z">Z</button>
+                    <button id="88" data="KeyX" class="x">X</button>
+                    <button id="192" data="KeyC" class="c">C</button>
+                    <button id="67" data="KeyV" class="v">V</button>
+                    <button id="86" data="KeyB" class="b">B</button>
+                    <button id="78" data="KeyN" class="n">N</button>
+                    <button id="77" data="KeyM" class="m">M</button>
+                    <button id="188" data="Period" class="period">.</button>
+                    <button id="190" data="Comma" class="comma">,</button>
+                    <button id="191" data="Slash" class="slash">/</button>
+                    <button id="38" data="ArrowUp" class="arrow-up">ArrowUp</button>
+                    <button id="16" data="ShiftRight" class="shift-right">Shift</button>
+                    <button id="17" data="ControlLeft" class="ctrl-left">Ctrl</button>
+                    <button id="91" data="MetaLeft" class="win">Win</button>
+                    <button id="18" data="AltLeft" class="alt-left">Alt</button>
+                    <button id="32" data="Space" class="space">Space</button>
+                    <button id="18" data="AltRight" class="alt-right">Alt</button>
+                    <button id="17" data="ControlRight" class="ctrl-right">Ctrl</button>
+                    <button id="37" data="ArrowLeft" class="arrow-left">ArrowLeft</button>
+                    <button id="40" data="ArrowDown" class="arrow-down">ArrowDown</button>
+                    <button id="39" data="ArrowRight" class="arrow-right">ArrowRight</button>
                 </div>
             </section>
         </div>
@@ -82,3 +81,33 @@ const html = `
 `;
 
 body.insertAdjacentHTML('afterbegin', html);
+
+const keyboardParent = document.querySelector('.keyboard-desk__shape');
+
+keyboardParent.addEventListener('mousedown', (e) => {
+    const currentMouse = document.querySelector(`.${e.target.className}`);
+    currentMouse.classList.add('active');
+    const input = document.querySelector('.keyboard-input__area');
+    input.value += currentMouse.innerHTML;
+});
+
+keyboardParent.addEventListener('mouseup', (e) => {
+    const currentMouse = document.getElementById(`${e.target.id}`);
+    currentMouse.classList.remove('active');
+});
+
+document.addEventListener('keydown', (e) => {
+    e.preventDefault();
+    const current = document.querySelector(`[data="${e.code}"]`);
+    console.log(current.innerHTML);
+    current.classList.add('active');
+    const input = document.querySelector('.keyboard-input__area');
+    input.value += current.innerHTML;
+});
+
+document.addEventListener('keyup', (e) => {
+    e.preventDefault();
+    const current = document.querySelector(`[data="${e.code}"]`);
+    console.log(current);
+    current.classList.remove('active');
+});
