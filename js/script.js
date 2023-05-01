@@ -25,7 +25,11 @@ const mouseListeners = () => {
       const currentMouse = document.querySelector(`.${e.target.className}`);
       currentMouse.classList.add('active');
       const input = document.querySelector('.keyboard-input__area');
-      input.value += currentMouse.innerHTML;
+      if (localStorage.getItem('case') === 'lower') {
+        input.value += currentMouse.innerHTML.toLowerCase();
+      } else {
+        input.value += currentMouse.innerHTML;
+      }
     }
   });
 
