@@ -388,5 +388,6 @@ body {
 }
 
 .active {
-    background-color: rgb(68, 143, 68);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.7);
 }
