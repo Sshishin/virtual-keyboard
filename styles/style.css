@@ -39,6 +39,7 @@ body {
     padding: 20px;
     font-size: 18px;
     font-weight: 100;
+    line-height: 12px;
     outline-style: none;
     background: rgb(241,241,241);
     background: linear-gradient(90deg, rgba(241,241,241,1) 0%, rgba(249,249,249,1) 43%, rgba(252,252,252,1) 100%);
@@ -65,7 +66,7 @@ body {
         "tilda      one        two            three four  five  six   seven eight nine     null         minus             equal              backspace   backspace"
         "tab        q          w              e     r     t     y     u     i     o        p            bracket-left      bracket-right      backslash   del"
         "caps       caps       a              s     d     f     g     h     j     k        l            semicolon         quote              enter       enter"
-        "shift-left shift-left shift-left     z     x     c     v     b     n     m        period       comma             slash              arrow-up    shift-right"
+        "shift-left shift-left shift-left     z     x     c     v     b     n     m        comma        period            slash              arrow-up    shift-right"
         "ctrl-left  win        alt-left       space space space space space space space    alt-right    ctrl-right        arrow-left         arrow-down  arrow-right";
 }
 

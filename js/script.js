@@ -1,12 +1,10 @@
 const body = document.querySelector('body');
 
-// TODO: Использовать Modules 
-
 const inputArea = `
     <main class="container">
         <div class="keyboard">
             <section class="keyboard-input">
-                <textarea class="keyboard-input__area"></textarea>
+                <textarea autofocus class="keyboard-input__area"></textarea>
             </section>
         </div>
     </main>
@@ -142,8 +140,8 @@ const htmlRU = `
                     <button id="86" data="KeyB" class="b">И</button>
                     <button id="78" data="KeyN" class="n">Т</button>
                     <button id="77" data="KeyM" class="m">Ь</button>
-                    <button id="188" data="Period" class="period">Б</button>
-                    <button id="190" data="Comma" class="comma">Ю</button>
+                    <button id="188" data="Period" class="period">Ю</button>
+                    <button id="190" data="Comma" class="comma">Б</button>
                     <button id="191" data="Slash" class="slash">/</button>
                     <button id="38" data="ArrowUp" class="arrow-up">ArrowUp</button>
                     <button id="16" data="ShiftRight" class="shift-right">Shift</button>
@@ -205,6 +203,11 @@ function mouseListeners() {
 
 document.addEventListener('keydown', (e) => {
 
+    const addActive = () => {
+        const current = document.querySelector(`[data="${e.code}"]`);
+        current.classList.add('active');
+    };
+
     if (e.altKey && e.code === "ShiftLeft") {
         e.preventDefault();
         if (localStorage.getItem('lang') == 'ru') {
@@ -216,10 +219,42 @@ document.addEventListener('keydown', (e) => {
         }
     }
 
-    const current = document.querySelector(`[data="${e.code}"]`);
-    current.classList.add('active');
-    const input = document.querySelector('.keyboard-input__area');
-    input.value += current.innerHTML;
+
+
+    const unprintedCharacters = () => {
+        if (e.code === "Space") {
+            addActive();
+            const input = document.querySelector('.keyboard-input__area');
+            input.value += ' ';
+        } else if (e.code === "Enter") {
+            addActive();
+            const input = document.querySelector('.keyboard-input__area');
+            input.value += '\n';
+        } else if (e.code === "Backspace") {
+            const input = document.querySelector('.keyboard-input__area');
+            addActive();
+            input.value.slice(0, 0);
+        } else if (e.code === "AltLeft") {
+            addActive();
+        } else if (e.code === "ShiftLeft") {
+            addActive();
+        }
+    };
+
+    unprintedCharacters();
+
+    const printedCharacters = () => {
+        if (e.code !== "Space" && e.code !== "Enter" && !(e.altKey && e.code === "ShiftLeft") && !e.altKey && e.code !== "Space" && e.code !== "Backspace" && e.code !== "ShiftLeft") {
+            e.preventDefault();
+            const current = document.querySelector(`[data="${e.code}"]`);
+            current.classList.add('active');
+            const input = document.querySelector('.keyboard-input__area');
+            input.value += current.innerHTML;
+        }
+    };
+
+    printedCharacters();
+
 });
 
 document.addEventListener('keyup', (e) => {
@@ -227,3 +262,10 @@ document.addEventListener('keyup', (e) => {
     const current = document.querySelector(`[data="${e.code}"]`);
     current.classList.remove('active');
 });
+
+// TODO: Присвоить собственные символы для каждого языка.
+// TODO: Добавить символы вместо букв.
+// TODO: При нажатии KeyC на любой раскладке не удаляется класс active.
+// TODO: При клике на тело клавиатуры тоже добавляется класс active.
+// TODO: Оптимизировать и добавить ES6 features.
+// TODO: Использовать Modules.
