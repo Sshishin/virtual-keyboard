@@ -84,7 +84,9 @@ const htmlEN = `
                     <button id="40" data="ArrowDown" class="arrow-down">ArrowDown</button>
                     <button id="39" data="ArrowRight" class="arrow-right">ArrowRight</button>
                 </div>
+                <h2 class="keyboard-desk__text">Change lang (<b>AltLeft + ShiftLeft</b>)</h2>
             </section>
+            
 `;
 
 const htmlRU = `
@@ -155,7 +157,9 @@ const htmlRU = `
                     <button id="40" data="ArrowDown" class="arrow-down">ArrowDown</button>
                     <button id="39" data="ArrowRight" class="arrow-right">ArrowRight</button>
                 </div>
+                <h2 class="keyboard-desk__text">Сменить язык (<b>AltLeft + ShiftLeft</b>)</h2>
             </section>
+            
 
 `;
 
