@@ -1,5 +1,3 @@
-'use strict';
-
 const htmlRU = `
             <section class="keyboard-desk">
                 <div class="keyboard-desk__shape">
@@ -72,4 +70,4 @@ const htmlRU = `
             </section>
 `;
 
-export { htmlRU };
+export default htmlRU;

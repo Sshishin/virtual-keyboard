@@ -1,7 +1,5 @@
-'use strict';
-
-import { htmlRU } from "./keyboardRU.js";
-import { htmlEN } from "./keyboardEN.js";
+import htmlRU from './keyboardRU.js';
+import htmlEN from './keyboardEN.js';
 
 const body = document.querySelector('body');
 
@@ -144,7 +142,6 @@ document.addEventListener('keydown', (e) => {
       } else {
         input.value += current.innerHTML;
       }
-
     }
   };
 

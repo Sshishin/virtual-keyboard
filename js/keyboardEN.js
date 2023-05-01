@@ -70,5 +70,4 @@ const htmlEN = `
             </section>
 `;
 
-export { htmlEN };
-
+export default htmlEN;
