@@ -118,7 +118,8 @@ document.addEventListener('keydown', (e) => {
     if (e.code !== 'Space'
       && e.code !== 'Enter'
       && !(e.altKey && e.code === 'ShiftLeft')
-      && !e.altKey
+      && e.code !== 'AltRight'
+      && e.code !== 'AltLeft'
       && e.code !== 'Space'
       && e.code !== 'Backspace'
       && e.code !== 'ShiftLeft'
